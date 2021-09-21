@@ -29,10 +29,6 @@
   "projects": {
     "angular-template": {
       "tags": []
-    },
-    "angular-template-e2e": {
-      "tags": [],
-      "implicitDependencies": ["angular-template"]
     }
   }
 }
