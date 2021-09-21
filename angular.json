@@ -93,33 +93,6 @@
           }
         }
       }
-    },
-    "angular-template-e2e": {
-      "root": "apps/angular-template-e2e",
-      "sourceRoot": "apps/angular-template-e2e/src",
-      "projectType": "application",
-      "architect": {
-        "e2e": {
-          "builder": "@nrwl/cypress:cypress",
-          "options": {
-            "cypressConfig": "apps/angular-template-e2e/cypress.json",
-            "devServerTarget": "angular-template:serve:development",
-            "tsConfig": "apps/angular-template-e2e/tsconfig.json"
-          },
-          "configurations": {
-            "production": {
-              "devServerTarget": "angular-template:serve:production"
-            }
-          }
-        },
-        "lint": {
-          "builder": "@nrwl/linter:eslint",
-          "outputs": ["{options.outputFile}"],
-          "options": {
-            "lintFilePatterns": ["apps/angular-template-e2e/**/*.{js,ts}"]
-          }
-        }
-      }
     }
   },
   "cli": {
