@@ -29,6 +29,9 @@
   "projects": {
     "angular-template": {
       "tags": []
+    },
+    "shared-assets": {
+      "tags": []
     }
   }
 }

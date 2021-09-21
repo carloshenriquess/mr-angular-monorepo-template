@@ -5,7 +5,7 @@
       "projectType": "application",
       "root": "apps/angular-template",
       "sourceRoot": "apps/angular-template/src",
-      "prefix": "mr-nx-angular-template",
+      "prefix": "app",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
@@ -98,6 +98,11 @@
           }
         }
       }
+    },
+    "shared-assets": {
+      "projectType": "library",
+      "root": "libs/shared-assets",
+      "sourceRoot": "libs/shared-assets"
     }
   },
   "cli": {
