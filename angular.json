@@ -19,7 +19,12 @@
             "inlineStyleLanguage": "scss",
             "assets": [
               "apps/angular-template/src/favicon.ico",
-              "apps/angular-template/src/assets"
+              "apps/angular-template/src/assets",
+              {
+                "input": "./libs/shared-assets/",
+                "glob": "**/*",
+                "output": "./assets"
+              }
             ],
             "styles": ["apps/angular-template/src/styles.scss"],
             "scripts": []
