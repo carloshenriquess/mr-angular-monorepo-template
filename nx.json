@@ -28,7 +28,8 @@
   },
   "projects": {
     "angular-template": {
-      "tags": []
+      "tags": [],
+      "implicitDependencies": ["shared-assets"]
     },
     "shared-assets": {
       "tags": []
