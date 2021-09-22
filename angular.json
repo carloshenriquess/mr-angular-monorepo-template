@@ -20,7 +20,7 @@
               "apps/angular-template/src/favicon.ico",
               "apps/angular-template/src/assets",
               {
-                "input": "./assets/",
+                "input": "./libs/assets/",
                 "glob": "**/*",
                 "output": "./assets"
               }
