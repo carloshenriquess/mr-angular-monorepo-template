@@ -11,7 +11,7 @@
           "builder": "@angular-devkit/build-angular:browser",
           "outputs": ["{options.outputPath}"],
           "options": {
-            "outputPath": "dist/apps/angular-template",
+            "outputPath": "_dist/apps/angular-template",
             "index": "apps/angular-template/src/index.html",
             "main": "apps/angular-template/src/main.ts",
             "polyfills": "apps/angular-template/src/polyfills.ts",
