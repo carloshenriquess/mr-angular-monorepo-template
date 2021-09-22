@@ -98,6 +98,11 @@
         }
       }
     },
+    "assets": {
+      "projectType": "library",
+      "root": "libs/assets",
+      "sourceRoot": "libs/assets/src"
+    },
     "image": {
       "projectType": "library",
       "root": "libs/image",
