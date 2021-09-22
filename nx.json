@@ -28,13 +28,9 @@
   },
   "projects": {
     "angular-template": {
-      "tags": [],
-      "implicitDependencies": ["shared-assets"]
-    },
-    "image": {
       "tags": []
     },
-    "shared-assets": {
+    "image": {
       "tags": []
     }
   }
