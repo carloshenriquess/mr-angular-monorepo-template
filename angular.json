@@ -5,7 +5,7 @@
       "projectType": "application",
       "root": "apps/angular-template",
       "sourceRoot": "apps/angular-template/src",
-      "prefix": "app",
+      "prefix": "mr",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
@@ -102,7 +102,7 @@
       "projectType": "library",
       "root": "libs/image",
       "sourceRoot": "libs/image/src",
-      "prefix": "mr-nx-angular-template",
+      "prefix": "mr",
       "architect": {
         "test": {
           "builder": "@nrwl/jest:jest",
@@ -157,7 +157,9 @@
       "unitTestRunner": "jest"
     },
     "@nrwl/angular:component": {
-      "style": "scss"
+      "style": "scss",
+      "skipTests": true,
+      "changeDetection": "OnPush"
     }
   },
   "defaultProject": "angular-template"
