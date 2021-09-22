@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'mr-nx-angular-template-root',
+  selector: 'mr-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })
