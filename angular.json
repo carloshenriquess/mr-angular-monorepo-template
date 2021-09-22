@@ -16,7 +16,6 @@
             "main": "apps/angular-template/src/main.ts",
             "polyfills": "apps/angular-template/src/polyfills.ts",
             "tsConfig": "apps/angular-template/tsconfig.app.json",
-            "inlineStyleLanguage": "scss",
             "assets": [
               "apps/angular-template/src/favicon.ico",
               "apps/angular-template/src/assets",
@@ -95,6 +94,31 @@
           "options": {
             "jestConfig": "apps/angular-template/jest.config.js",
             "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "image": {
+      "projectType": "library",
+      "root": "libs/image",
+      "sourceRoot": "libs/image/src",
+      "prefix": "mr-nx-angular-template",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/image"],
+          "options": {
+            "jestConfig": "libs/image/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/image/src/**/*.ts",
+              "libs/image/src/**/*.html"
+            ]
           }
         }
       }
