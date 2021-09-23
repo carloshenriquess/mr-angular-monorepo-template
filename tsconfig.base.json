@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@mr/button": ["libs/button/src/index.ts"],
       "@mr/image": ["libs/image/src/index.ts"]
     }
   },

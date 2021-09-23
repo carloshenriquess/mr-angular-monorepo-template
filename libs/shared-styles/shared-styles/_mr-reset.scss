@@ -1,7 +1,17 @@
 @use 'shared-util' as *;
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 table {
   table-layout: fixed;
+}
+
+button {
+  border: none;
 }
 
 body {
