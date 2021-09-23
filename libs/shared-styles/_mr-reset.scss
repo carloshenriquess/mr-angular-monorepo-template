@@ -1,3 +1,5 @@
+@use 'variables' as *;
+
 table {
   table-layout: fixed;
 }
@@ -8,6 +10,6 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #1f1f1f;
-  color: #ffffff;
+  background-color: $black;
+  color: $white;
 }
