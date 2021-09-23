@@ -27,7 +27,7 @@
       "linter": "eslint",
       "unitTestRunner": "jest"
     },
-    "@schematics/angular:component": {
+    "@nrwl/angular:component": {
       "style": "scss",
       "skipTests": true,
       "changeDetection": "OnPush"
