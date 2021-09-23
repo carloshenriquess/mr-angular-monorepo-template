@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
+    "dev": "nx serve angular-template",
     "serve": "nx serve angular-template",
     "build": "nx build angular-template",
     "serve-build": "npx http-server dist/apps/angular-template -o",
