@@ -59,7 +59,10 @@
                 "output": "./assets"
               }
             ],
-            "styles": ["apps/angular-template/src/styles.scss"],
+            "styles": [
+              "apps/angular-template/src/styles.scss",
+              "libs/shared-styles/styles.scss"
+            ],
             "scripts": []
           },
           "configurations": {
