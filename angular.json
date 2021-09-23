@@ -59,11 +59,14 @@
                 "output": "./assets"
               }
             ],
-            "styles": [
-              "apps/angular-template/src/styles.scss",
-              "libs/shared-styles/styles.scss"
-            ],
-            "scripts": []
+            "styles": ["apps/angular-template/src/styles/styles.scss"],
+            "scripts": [],
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "apps/angular-template/src/styles",
+                "libs/shared-styles"
+              ]
+            }
           },
           "configurations": {
             "production": {

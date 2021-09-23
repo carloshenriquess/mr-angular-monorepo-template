@@ -29,7 +29,7 @@
   "projects": {
     "angular-template": {
       "tags": [],
-      "implicitDependencies": ["assets"]
+      "implicitDependencies": ["assets", "shared-styles"]
     },
     "assets": {
       "tags": []
