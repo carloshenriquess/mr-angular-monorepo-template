@@ -42,12 +42,6 @@
       "prefix": "mr",
       "architect": {
         "build": {
-          "dependsOn": [
-            {
-              "target": "build",
-              "projects": "dependencies"
-            }
-          ],
           "builder": "@nrwl/angular:webpack-browser",
           "outputs": ["{options.outputPath}"],
           "options": {
@@ -157,12 +151,6 @@
       "architect": {
         "build": {
           "builder": "@nrwl/angular:ng-packagr-lite",
-          "dependsOn": [
-            {
-              "target": "build",
-              "projects": "dependencies"
-            }
-          ],
           "outputs": ["dist/libs/button"],
           "options": {
             "project": "libs/button/ng-package.json"
