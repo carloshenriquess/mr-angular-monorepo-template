@@ -4,7 +4,7 @@
   "sourceRoot": "projects/angular-template/src",
   "prefix": "mr",
   "tags": [],
-  "implicitDependencies": ["assets", "shared-styles"],
+  "implicitDependencies": ["shared-styles"],
   "targets": {
     "build": {
       "executor": "@nrwl/angular:webpack-browser",
@@ -19,9 +19,9 @@
           "projects/angular-template/src/favicon.ico",
           "projects/angular-template/src/assets",
           {
-            "input": "projects/libs/assets",
+            "input": "assets",
             "glob": "**/*",
-            "output": "assets"
+            "output": "assets/shared-assets"
           }
         ],
         "styles": ["projects/angular-template/src/styles/styles.scss"],

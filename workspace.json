@@ -9,7 +9,6 @@
     "angular-template": "projects/angular-template",
     "button": "projects/libs/button",
     "image": "projects/libs/image",
-    "assets": "projects/libs/assets",
     "shared-styles": "projects/libs/shared-styles"
   },
   "defaultProject": "angular-template",
