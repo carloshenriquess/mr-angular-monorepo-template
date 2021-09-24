@@ -38,33 +38,33 @@
   "projects": {
     "angular-template": {
       "projectType": "application",
-      "root": "projects/apps/angular-template",
-      "sourceRoot": "projects/apps/angular-template/src",
+      "root": "projects/angular-template",
+      "sourceRoot": "projects/angular-template/src",
       "prefix": "mr",
       "architect": {
         "build": {
           "builder": "@nrwl/angular:webpack-browser",
           "outputs": ["{options.outputPath}"],
           "options": {
-            "outputPath": "dist/projects/apps/angular-template",
-            "index": "projects/apps/angular-template/src/index.html",
-            "main": "projects/apps/angular-template/src/main.ts",
-            "polyfills": "projects/apps/angular-template/src/polyfills.ts",
-            "tsConfig": "projects/apps/angular-template/tsconfig.app.json",
+            "outputPath": "dist/projects/angular-template",
+            "index": "projects/angular-template/src/index.html",
+            "main": "projects/angular-template/src/main.ts",
+            "polyfills": "projects/angular-template/src/polyfills.ts",
+            "tsConfig": "projects/angular-template/tsconfig.app.json",
             "assets": [
-              "projects/apps/angular-template/src/favicon.ico",
-              "projects/apps/angular-template/src/assets",
+              "projects/angular-template/src/favicon.ico",
+              "projects/angular-template/src/assets",
               {
                 "input": "./libs/assets/",
                 "glob": "**/*",
                 "output": "./assets"
               }
             ],
-            "styles": ["projects/apps/angular-template/src/styles/styles.scss"],
+            "styles": ["projects/angular-template/src/styles/styles.scss"],
             "scripts": [],
             "stylePreprocessorOptions": {
               "includePaths": [
-                "projects/apps/angular-template/src/styles",
+                "projects/angular-template/src/styles",
                 "libs/shared-styles"
               ]
             }
@@ -85,8 +85,8 @@
               ],
               "fileReplacements": [
                 {
-                  "replace": "projects/apps/angular-template/src/environments/environment.ts",
-                  "with": "projects/apps/angular-template/src/environments/environment.prod.ts"
+                  "replace": "projects/angular-template/src/environments/environment.ts",
+                  "with": "projects/angular-template/src/environments/environment.prod.ts"
                 }
               ],
               "outputHashing": "all"
@@ -124,16 +124,16 @@
           "builder": "@nrwl/linter:eslint",
           "options": {
             "lintFilePatterns": [
-              "projects/apps/angular-template/src/**/*.ts",
-              "projects/apps/angular-template/src/**/*.html"
+              "projects/angular-template/src/**/*.ts",
+              "projects/angular-template/src/**/*.html"
             ]
           }
         },
         "test": {
           "builder": "@nrwl/jest:jest",
-          "outputs": ["coverage/projects/apps/angular-template"],
+          "outputs": ["coverage/projects/angular-template"],
           "options": {
-            "jestConfig": "projects/apps/angular-template/jest.config.js",
+            "jestConfig": "projects/angular-template/jest.config.js",
             "passWithNoTests": true
           }
         }

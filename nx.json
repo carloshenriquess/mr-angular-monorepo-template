@@ -1,7 +1,7 @@
 {
   "npmScope": "mr",
   "workspaceLayout": {
-    "appsDir": "projects/apps",
+    "appsDir": "projects",
     "libsDir": "projects/libs"
   },
   "affected": {
