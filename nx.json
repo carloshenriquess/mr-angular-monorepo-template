@@ -1,5 +1,9 @@
 {
   "npmScope": "mr",
+  "workspaceLayout": {
+    "appsDir": "projects/apps",
+    "libsDir": "projects/libs"
+  },
   "affected": {
     "defaultBase": "master"
   },
