@@ -6,7 +6,7 @@
     "dev": "nx serve angular-template",
     "serve": "nx serve angular-template",
     "build": "nx build angular-template",
-    "serve-build": "npx http-server dist/apps/angular-template -o -c-1",
+    "serve-build": "npx http-server dist/projects/angular-template -o -c-1",
     "deps": "nx dep-graph",
     "graph": "nx dep-graph",
     "affected": "nx affected:dep-graph",

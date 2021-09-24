@@ -55,9 +55,9 @@
               "projects/angular-template/src/favicon.ico",
               "projects/angular-template/src/assets",
               {
-                "input": "./libs/assets/",
+                "input": "projects/libs/assets",
                 "glob": "**/*",
-                "output": "./assets"
+                "output": "assets"
               }
             ],
             "styles": ["projects/angular-template/src/styles/styles.scss"],
@@ -65,7 +65,7 @@
             "stylePreprocessorOptions": {
               "includePaths": [
                 "projects/angular-template/src/styles",
-                "libs/shared-styles"
+                "projects/libs/shared-styles"
               ]
             }
           },
