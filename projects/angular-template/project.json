@@ -4,7 +4,7 @@
   "sourceRoot": "projects/angular-template/src",
   "prefix": "mr",
   "tags": [],
-  "implicitDependencies": [],
+  "implicitDependencies": ["assets", "shared-styles"],
   "targets": {
     "build": {
       "executor": "@nrwl/angular:webpack-browser",
