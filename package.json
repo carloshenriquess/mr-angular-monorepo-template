@@ -10,9 +10,10 @@
     "deps": "nx dep-graph",
     "graph": "nx dep-graph",
     "affected": "nx affected:dep-graph",
+    "workspace-lint": "nx workspace-lint",
+    "test": "nx test",
     "ng": "nx",
-    "postinstall": "node ./decorate-angular-cli.js && ngcc --properties es2015 browser module main",
-    "test": "nx test"
+    "postinstall": "node ./decorate-angular-cli.js && ngcc --properties es2015 browser module main"
   },
   "private": true,
   "dependencies": {

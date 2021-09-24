@@ -1,7 +1,7 @@
 {
   "projectType": "library",
-  "root": "libs/assets",
-  "sourceRoot": "libs/assets/src",
+  "root": "projects/libs/assets",
+  "sourceRoot": "projects/libs/assets/src",
   "tags": [],
   "implicitDependencies": [],
   "targets": {}
