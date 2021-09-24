@@ -4,6 +4,6 @@ import { Component, ChangeDetectionStrategy } from '@angular/core';
   selector: 'mr-image',
   templateUrl: './image.component.html',
   styleUrls: ['./image.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class ImageComponent { }
+export class ImageComponent {}

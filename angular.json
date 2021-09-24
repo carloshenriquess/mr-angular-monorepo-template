@@ -147,31 +147,31 @@
     },
     "button": {
       "projectType": "library",
-      "root": "libs/button",
-      "sourceRoot": "libs/button/src",
+      "root": "projects/libs/button",
+      "sourceRoot": "projects/libs/button/src",
       "prefix": "mr",
       "architect": {
         "build": {
           "builder": "@nrwl/angular:ng-packagr-lite",
-          "outputs": ["dist/libs/button"],
+          "outputs": ["dist/projects/libs/button"],
           "options": {
-            "project": "libs/button/ng-package.json"
+            "project": "projects/libs/button/ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "libs/button/tsconfig.lib.prod.json"
+              "tsConfig": "projects/libs/button/tsconfig.lib.prod.json"
             },
             "development": {
-              "tsConfig": "libs/button/tsconfig.lib.json"
+              "tsConfig": "projects/libs/button/tsconfig.lib.json"
             }
           },
           "defaultConfiguration": "production"
         },
         "test": {
           "builder": "@nrwl/jest:jest",
-          "outputs": ["coverage/libs/button"],
+          "outputs": ["coverage/projects/libs/button"],
           "options": {
-            "jestConfig": "libs/button/jest.config.js",
+            "jestConfig": "projects/libs/button/jest.config.js",
             "passWithNoTests": true
           }
         },
@@ -179,8 +179,8 @@
           "builder": "@nrwl/linter:eslint",
           "options": {
             "lintFilePatterns": [
-              "libs/button/src/**/*.ts",
-              "libs/button/src/**/*.html"
+              "projects/libs/button/src/**/*.ts",
+              "projects/libs/button/src/**/*.html"
             ]
           }
         }
@@ -188,15 +188,15 @@
     },
     "image": {
       "projectType": "library",
-      "root": "libs/image",
-      "sourceRoot": "libs/image/src",
+      "root": "projects/libs/image",
+      "sourceRoot": "projects/libs/image/src",
       "prefix": "mr",
       "architect": {
         "test": {
           "builder": "@nrwl/jest:jest",
-          "outputs": ["coverage/libs/image"],
+          "outputs": ["coverage/projects/libs/image"],
           "options": {
-            "jestConfig": "libs/image/jest.config.js",
+            "jestConfig": "projects/libs/image/jest.config.js",
             "passWithNoTests": true
           }
         },
@@ -204,8 +204,8 @@
           "builder": "@nrwl/linter:eslint",
           "options": {
             "lintFilePatterns": [
-              "libs/image/src/**/*.ts",
-              "libs/image/src/**/*.html"
+              "projects/libs/image/src/**/*.ts",
+              "projects/libs/image/src/**/*.html"
             ]
           }
         }

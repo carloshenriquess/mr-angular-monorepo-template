@@ -3,11 +3,7 @@ import { ImageComponent } from './image/image.component';
 
 @NgModule({
   imports: [],
-  declarations: [
-    ImageComponent
-  ],
-  exports: [
-    ImageComponent
-  ],
+  declarations: [ImageComponent],
+  exports: [ImageComponent],
 })
-export class ImageModule { }
+export class ImageModule {}
