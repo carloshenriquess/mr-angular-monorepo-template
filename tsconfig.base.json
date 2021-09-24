@@ -16,6 +16,7 @@
     "baseUrl": ".",
     "paths": {
       "@mr/button": ["projects/libs/button/src/index.ts"],
+      "@mr/image": ["projects/libs/image/src/index.ts"],
       "@mr/input": ["projects/libs/input/src/index.ts"]
     }
   },

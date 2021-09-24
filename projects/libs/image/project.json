@@ -1,0 +1,42 @@
+{
+  "projectType": "library",
+  "root": "projects/libs/image",
+  "sourceRoot": "projects/libs/image/src",
+  "prefix": "mr",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/angular:ng-packagr-lite",
+      "outputs": ["dist/projects/libs/image"],
+      "options": {
+        "project": "projects/libs/image/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "projects/libs/image/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "projects/libs/image/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/projects/libs/image"],
+      "options": {
+        "jestConfig": "projects/libs/image/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "projects/libs/image/src/**/*.ts",
+          "projects/libs/image/src/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

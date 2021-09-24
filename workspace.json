@@ -8,7 +8,8 @@
   "projects": {
     "angular-template": "projects/angular-template",
     "button": "projects/libs/button",
-    "input": "projects\\libs\\input",
+    "image": "projects\\libs\\image",
+    "input": "projects/libs/input",
     "shared-styles": "projects/libs/shared-styles"
   },
   "defaultProject": "angular-template",
