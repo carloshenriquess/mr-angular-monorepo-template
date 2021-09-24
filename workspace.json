@@ -5,6 +5,14 @@
     "defaultCollection": "@nrwl/angular",
     "packageManager": "yarn"
   },
+  "projects": {
+    "angular-template": "projects/angular-template",
+    "button": "projects/libs/button",
+    "image": "projects/libs/image",
+    "assets": "projects/libs/assets",
+    "shared-styles": "projects/libs/shared-styles"
+  },
+  "defaultProject": "angular-template",
   "generators": {
     "@nrwl/angular": {
       "application": {
@@ -32,190 +40,6 @@
       "style": "scss",
       "skipTests": true,
       "changeDetection": "OnPush"
-    }
-  },
-  "defaultProject": "angular-template",
-  "projects": {
-    "angular-template": {
-      "projectType": "application",
-      "root": "projects/angular-template",
-      "sourceRoot": "projects/angular-template/src",
-      "prefix": "mr",
-      "targets": {
-        "build": {
-          "executor": "@nrwl/angular:webpack-browser",
-          "outputs": ["{options.outputPath}"],
-          "options": {
-            "outputPath": "dist/projects/angular-template",
-            "index": "projects/angular-template/src/index.html",
-            "main": "projects/angular-template/src/main.ts",
-            "polyfills": "projects/angular-template/src/polyfills.ts",
-            "tsConfig": "projects/angular-template/tsconfig.app.json",
-            "assets": [
-              "projects/angular-template/src/favicon.ico",
-              "projects/angular-template/src/assets",
-              {
-                "input": "projects/libs/assets",
-                "glob": "**/*",
-                "output": "assets"
-              }
-            ],
-            "styles": ["projects/angular-template/src/styles/styles.scss"],
-            "scripts": [],
-            "stylePreprocessorOptions": {
-              "includePaths": [
-                "projects/angular-template/src/styles",
-                "projects/libs/shared-styles"
-              ]
-            }
-          },
-          "configurations": {
-            "production": {
-              "budgets": [
-                {
-                  "type": "initial",
-                  "maximumWarning": "500kb",
-                  "maximumError": "1mb"
-                },
-                {
-                  "type": "anyComponentStyle",
-                  "maximumWarning": "2kb",
-                  "maximumError": "4kb"
-                }
-              ],
-              "fileReplacements": [
-                {
-                  "replace": "projects/angular-template/src/environments/environment.ts",
-                  "with": "projects/angular-template/src/environments/environment.prod.ts"
-                }
-              ],
-              "outputHashing": "all"
-            },
-            "development": {
-              "buildOptimizer": false,
-              "optimization": false,
-              "vendorChunk": true,
-              "extractLicenses": false,
-              "sourceMap": true,
-              "namedChunks": true
-            }
-          },
-          "defaultConfiguration": "production"
-        },
-        "serve": {
-          "executor": "@nrwl/web:file-server",
-          "configurations": {
-            "production": {
-              "buildTarget": "angular-template:build:production"
-            },
-            "development": {
-              "buildTarget": "angular-template:build:development"
-            }
-          },
-          "defaultConfiguration": "development"
-        },
-        "extract-i18n": {
-          "executor": "@angular-devkit/build-angular:extract-i18n",
-          "options": {
-            "browserTarget": "angular-template:build"
-          }
-        },
-        "lint": {
-          "executor": "@nrwl/linter:eslint",
-          "options": {
-            "lintFilePatterns": [
-              "projects/angular-template/src/**/*.ts",
-              "projects/angular-template/src/**/*.html"
-            ]
-          }
-        },
-        "test": {
-          "executor": "@nrwl/jest:jest",
-          "outputs": ["coverage/projects/angular-template"],
-          "options": {
-            "jestConfig": "projects/angular-template/jest.config.js",
-            "passWithNoTests": true
-          }
-        }
-      }
-    },
-    "button": {
-      "projectType": "library",
-      "root": "projects/libs/button",
-      "sourceRoot": "projects/libs/button/src",
-      "prefix": "mr",
-      "targets": {
-        "build": {
-          "executor": "@nrwl/angular:ng-packagr-lite",
-          "outputs": ["dist/projects/libs/button"],
-          "options": {
-            "project": "projects/libs/button/ng-package.json"
-          },
-          "configurations": {
-            "production": {
-              "tsConfig": "projects/libs/button/tsconfig.lib.prod.json"
-            },
-            "development": {
-              "tsConfig": "projects/libs/button/tsconfig.lib.json"
-            }
-          },
-          "defaultConfiguration": "production"
-        },
-        "test": {
-          "executor": "@nrwl/jest:jest",
-          "outputs": ["coverage/projects/libs/button"],
-          "options": {
-            "jestConfig": "projects/libs/button/jest.config.js",
-            "passWithNoTests": true
-          }
-        },
-        "lint": {
-          "executor": "@nrwl/linter:eslint",
-          "options": {
-            "lintFilePatterns": [
-              "projects/libs/button/src/**/*.ts",
-              "projects/libs/button/src/**/*.html"
-            ]
-          }
-        }
-      }
-    },
-    "image": {
-      "projectType": "library",
-      "root": "projects/libs/image",
-      "sourceRoot": "projects/libs/image/src",
-      "prefix": "mr",
-      "targets": {
-        "test": {
-          "executor": "@nrwl/jest:jest",
-          "outputs": ["coverage/projects/libs/image"],
-          "options": {
-            "jestConfig": "projects/libs/image/jest.config.js",
-            "passWithNoTests": true
-          }
-        },
-        "lint": {
-          "executor": "@nrwl/linter:eslint",
-          "options": {
-            "lintFilePatterns": [
-              "projects/libs/image/src/**/*.ts",
-              "projects/libs/image/src/**/*.html"
-            ]
-          }
-        }
-      }
-    },
-    "assets": {
-      "projectType": "library",
-      "root": "libs/assets",
-      "sourceRoot": "libs/assets/src",
-      "targets": {}
-    },
-    "shared-styles": {
-      "projectType": "library",
-      "root": "libs/shared-styles",
-      "sourceRoot": "libs/shared-styles/src",
-      "targets": {}
     }
   }
 }

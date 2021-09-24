@@ -1,0 +1,43 @@
+{
+  "projectType": "library",
+  "root": "projects/libs/button",
+  "sourceRoot": "projects/libs/button/src",
+  "prefix": "mr",
+  "tags": [],
+  "implicitDependencies": [],
+  "targets": {
+    "build": {
+      "executor": "@nrwl/angular:ng-packagr-lite",
+      "outputs": ["dist/projects/libs/button"],
+      "options": {
+        "project": "projects/libs/button/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "projects/libs/button/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "projects/libs/button/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/projects/libs/button"],
+      "options": {
+        "jestConfig": "projects/libs/button/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "projects/libs/button/src/**/*.ts",
+          "projects/libs/button/src/**/*.html"
+        ]
+      }
+    }
+  }
+}
