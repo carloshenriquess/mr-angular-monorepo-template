@@ -142,7 +142,8 @@
     "assets": {
       "projectType": "library",
       "root": "libs/assets",
-      "sourceRoot": "libs/assets/src"
+      "sourceRoot": "libs/assets/src",
+      "architect": {}
     },
     "button": {
       "projectType": "library",
@@ -213,7 +214,8 @@
     "shared-styles": {
       "projectType": "library",
       "root": "libs/shared-styles",
-      "sourceRoot": "libs/shared-styles/src"
+      "sourceRoot": "libs/shared-styles/src",
+      "architect": {}
     }
   }
 }
