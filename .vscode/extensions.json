@@ -4,6 +4,11 @@
     "nrwl.angular-console",
     "esbenp.prettier-vscode",
     "firsttris.vscode-jest-runner",
-    "dbaeumer.vscode-eslint"
+    "dbaeumer.vscode-eslint",
+    "aaron-bond.better-comments",
+    "formulahendry.auto-rename-tag",
+    "natewallace.angular2-inline",
+    "editorconfig.editorconfig",
+    "orepor.color-tabs-vscode-ext"
   ]
 }
