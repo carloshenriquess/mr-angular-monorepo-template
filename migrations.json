@@ -161,6 +161,7 @@
       "name": "set-build-libs-from-source"
     },
     {
+      "cli": "nx",
       "version": "13.0.0",
       "factory": "./update-13/schematic-options",
       "description": "Remove no longer valid Angular schematic options from `angular.json`.",
@@ -168,6 +169,7 @@
       "name": "schematic-options-13"
     },
     {
+      "cli": "nx",
       "version": "13.0.0",
       "factory": "./update-13/update-angular-config",
       "description": "Remove deprecated options from 'angular.json' that are no longer present in v13.",
@@ -175,6 +177,7 @@
       "name": "update-angular-config-v13"
     },
     {
+      "cli": "nx",
       "version": "13.0.0",
       "factory": "./update-13/update-libraries",
       "description": "Update library projects to be published in partial mode and removed deprecated options from ng-packagr configuration.",
@@ -182,6 +185,7 @@
       "name": "update-libraries-v13"
     },
     {
+      "cli": "nx",
       "version": "13.0.0",
       "factory": "./update-13/drop-ie-polyfills",
       "description": "Remove polyfills required only for Internet Explorer which is no longer supported.",
@@ -189,6 +193,7 @@
       "name": "drop-ie-polyfills"
     },
     {
+      "cli": "nx",
       "version": "13.0.0",
       "factory": "./update-13/update-gitignore",
       "description": "Updating '.gitignore' to include '.angular/cache'.",
@@ -196,6 +201,7 @@
       "name": "update-gitignore"
     },
     {
+      "cli": "nx",
       "version": "13.0.0-beta",
       "description": "Migrates `[routerLink]=\"\"` in templates to `[routerLink]=\"[]\"` because these links are likely intended to route to the current page with updated fragment/query params.",
       "factory": "./migrations/router-link-empty-expression/index",
@@ -203,6 +209,7 @@
       "name": "migration-v13-router-link-empty-expression"
     },
     {
+      "cli": "nx",
       "version": "13.0.0-beta",
       "description": "In Angular version 13, the `teardown` flag in `TestBed` will be enabled by default. This migration automatically opts out existing apps from the new teardown behavior.",
       "factory": "./migrations/testbed-teardown/index",
@@ -210,6 +217,7 @@
       "name": "migration-v13-testbed-teardown"
     },
     {
+      "cli": "nx",
       "version": "13.1.0-beta",
       "description": "As of Angular version 13, `entryComponents` are no longer necessary.",
       "factory": "./migrations/entry-components/index",
