@@ -1,6 +1,5 @@
 {
   "projectType": "library",
-  "root": "projects/libs/shared-styles",
   "sourceRoot": "projects/libs/shared-styles/src",
   "tags": [],
   "implicitDependencies": [],

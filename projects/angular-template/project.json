@@ -1,6 +1,5 @@
 {
   "projectType": "application",
-  "root": "projects/angular-template",
   "sourceRoot": "projects/angular-template/src",
   "prefix": "mr",
   "tags": [],
@@ -97,7 +96,7 @@
       "executor": "@nrwl/jest:jest",
       "outputs": ["coverage/projects/angular-template"],
       "options": {
-        "jestConfig": "projects/angular-template/jest.config.js",
+        "jestConfig": "projects/angular-template/jest.config.ts",
         "passWithNoTests": true
       }
     }
